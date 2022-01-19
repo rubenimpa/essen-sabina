@@ -1,0 +1,46 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid #000;*/
+
+}
+
+@media screen and (max-width: 500px) {
+    #grilla {
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "presentacion catalogo";
+        grid-template-rows: 150px 300px;
+        grid-template-columns: 70% 30%;
+    }
+    
+    .list-nav {
+        text-align: center;
+        background-color: #014f86;
+    }
+
+    .list-item {
+        border: 1px solid #fff;
+        height: 30px;
+        padding-top: 10px;
+    }
+
+    .list-item a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .header {
+        grid-area: header;
+    }
+    
+    .seccion-presentacion {
+        grid-area: presentacion;
+    }
+    
+    .seccion-catalogo {
+        grid-area: catalogo;
+    }
+}
