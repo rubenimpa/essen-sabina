@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* @font-face {
@@ -16,7 +17,8 @@
 
 /* Seccion header con el menú de navegación */
 header {
-    background-color: #ffb4a2;
+    background-image: linear-gradient(to left, #ca2e06, #ffb4a2);
+    /*background-color: #ffb4a2;*/
     width: 100%;
     height: 100px;
 }
@@ -114,14 +116,21 @@ header {
 
 .catalogo-img-1 {
     background-image: url('../images/essen-ollas-y-sartenes.png');
+    transition: box-shadow 0.5s;
 }
 
 .catalogo-img-2 {
     background-image: url('../images/essen-combos.png');
+    transition: box-shadow 0.5s;
 }
 
 .catalogo-img-3 {
     background-image: url('../images/essen-complementos.png');
+    transition: box-shadow 0.5s;
+}
+
+.catalogo-img-1:hover, .catalogo-img-2:hover, .catalogo-img-3:hover {
+    box-shadow: 5px 10px 8px #888888;
 }
 
 .catalogo-link {
