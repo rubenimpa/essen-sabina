@@ -15,8 +15,12 @@
     --font-texto: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#header, #presentacion-seccion {
+    --bs-gutter-x: 0;
+}
+
 /* Seccion header con el menú de navegación */
-header {
+.header-img {
     background-image: linear-gradient(to left, #ca2e06, #ffb4a2);
     /*background-color: #ffb4a2;*/
     width: 100%;
@@ -33,23 +37,23 @@ header {
     margin: 20px 0 0 20px;
 }
 
-.nav-link {
+#nav-link {
     text-decoration: none;
     color: white;
 }
 
-.nav-element {
+#nav-element {
     display: inline;
     margin: 40px;
     font-family: var(--font-texto);
     font-size: 20px;
 }
 
-.nav-list-element {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 45px 70px 0 0;
+#nav-list-element {
+    display: -webkit-inline-box;
+    position: relative;
+    right: 20px;
+    margin-top: 40px;
 }
 
 /* Seccion Presentación del index */
@@ -88,6 +92,7 @@ header {
     text-align: center;
     font-family: var(--font-titulo);
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 
@@ -114,19 +119,22 @@ header {
     height: 400px;
 }
 
-.catalogo-img-1 {
+#catalogo-img-1 {
     background-image: url('../images/essen-ollas-y-sartenes.png');
     transition: box-shadow 0.5s;
+    width: 400px;
 }
 
-.catalogo-img-2 {
+#catalogo-img-2 {
     background-image: url('../images/essen-combos.png');
     transition: box-shadow 0.5s;
+    width: 400px;
 }
 
-.catalogo-img-3 {
+#catalogo-img-3 {
     background-image: url('../images/essen-complementos.png');
     transition: box-shadow 0.5s;
+    width: 400px;
 }
 
 .catalogo-img-1:hover, .catalogo-img-2:hover, .catalogo-img-3:hover {
@@ -250,50 +258,38 @@ header {
     text-align: center;
 }
 
-@media screen and (min-width: 910px ) {
+@media screen and (min-width: 992px ) {
 
-    .nav-list-element {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 45px 70px 0 0;
+    #nav-list-element {
+        display: -webkit-inline-box;
+        position: relative;
+        right: 20px;
+        margin-top: 40px;
     }
 
 }
 
-@media screen and (max-width: 909px) {
-
-    #grilla {
-        display: grid;
-        grid-template-areas: 
-        "nav1"
-        "nav2"
-        "presentacion"
-        "catalogo"
-        "contacto"
-        "footer";
-        grid-template-rows: 100px 100px 690px 1420px 660px 100px;
-        grid-template-columns: 100%;
-    }
+@media screen and (max-width: 992px) {
     
-    .logo-element {
-        grid-area: nav1;
+    #logo-element {
+        /*grid-area: nav1;*/
         align-self: center;
     }
 
-    header {
-        background-color: #ffb4a2;
+    .header-img {
+        background-image: linear-gradient(to left, #ca2e06, #ffb4a2);
         width: 100%;
-        height: 300px;
+        height: 200px;
     }
 
-    .nav-element {
+    #nav-element {
         display: inline;
         margin: 30px;
+        font-size: 16px;
     }
 
-    .nav-list-element {
-        grid-area: nav2;
+    #nav-list-element {
+        /*grid-area: nav2;*/
         position: relative;
         align-self: center;
         margin: 20px;
@@ -301,7 +297,7 @@ header {
     }
 
     .presentacion-seccion {
-        grid-area: presentacion;
+        /*grid-area: presentacion;*/
         margin-top: 120px;
     }
 
