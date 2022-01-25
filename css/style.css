@@ -237,6 +237,10 @@
     flex-wrap: wrap;
 }
 
+#catalogo-lista-elemento-1, #catalogo-lista-elemento-2, #catalogo-lista-elemento-3, #catalogo-lista-elemento-4 {
+    width: 400px;
+}
+
 .catalogo-lista-elemento {
     margin: 50px 50px 50px 50px;
     display: flex;
@@ -252,7 +256,6 @@
 .catalogo-link-button {
     background-color: #83c5be;
     color: #fff;
-    height: 20px;
     text-decoration: none;
     padding: 10px;
     text-align: center;
