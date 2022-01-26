@@ -2,45 +2,321 @@
 * {
     margin: 0;
     padding: 0;
-    /*border: 1px solid #000;*/
+    box-sizing: border-box;
+}
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+:root {
+    --font-titulo:'Playfair Display', serif;
+    --font-texto: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header, #presentacion-seccion {
+    --bs-gutter-x: 0;
+}
+
+/* Seccion header con el menú de navegación */
+.header-img {
+    background-image: linear-gradient(to left, #ca2e06, #ffb4a2);
+    /*background-color: #ffb4a2;*/
+    width: 100%;
+    height: 100px;
+}
+
+.logo-element {
+    display: inline-block;
+    background-image: url('../images/essen-sabina.png');
+    width: 330px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px 0 0 20px;
+}
+
+#nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-element {
+    display: inline;
+    margin: 40px;
+    font-family: var(--font-texto);
+    font-size: 20px;
+}
+
+#nav-list-element {
+    display: -webkit-inline-box;
+    position: relative;
+    right: 20px;
+    margin-top: 40px;
+}
+
+/* Seccion Presentación del index */
+.presentacion-seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.essen-presentacion {
+    position: relative;
+    background-image: url('../images/essen-presentacion-2.png');
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.presentacion-texto {
+    position: absolute;
+    bottom: 220px;
+    right: 10px;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;*/
+    line-height: 40px;
+    margin: 10px 10px 0 10px;
+    font-family: var(--font-texto);
+    color: #fff;
+    font-size: 20px;
+}
+
+.seccion-titulo {
+    text-align: center;
+    font-family: var(--font-titulo);
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+/* Seccion catálogo del index */
+.catalogo-seccion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.catalogo-opciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.catalogo-item {
+    position: relative;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+}
+
+#catalogo-img-1 {
+    background-image: url('../images/essen-ollas-y-sartenes.png');
+    transition: box-shadow 0.5s;
+    width: 400px;
+}
+
+#catalogo-img-2 {
+    background-image: url('../images/essen-combos.png');
+    transition: box-shadow 0.5s;
+    width: 400px;
+}
+
+#catalogo-img-3 {
+    background-image: url('../images/essen-complementos.png');
+    transition: box-shadow 0.5s;
+    width: 400px;
+}
+
+.catalogo-img-1:hover, .catalogo-img-2:hover, .catalogo-img-3:hover {
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.catalogo-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.catalogo-texto {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: var(--font-texto);
+}
+
+/* Seccion contacto del index */
+.contacto-seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: var(--font-texto);
+}
+
+.essen-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.essen-contacto-img {
+    background-image: url('../images/essen-contacto.png');
+    width: 90%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px 20px 0 40px;
+}
+
+.essen-contacto-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 50px 20px 0 100px;
+    font-family: var(--font-texto);
+    color: #fff;
+}
+
+.essen-contacto-item-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.essen-contacto-item p {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+}
+
+/* Seccion footer */
+.footer-seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffb4a2;
+    width: 100%;
+    height: 200px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-icon {
+    margin: 5px;
+}
+
+.footer-img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Seccion catalogo lista */
+.catalogo-lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#catalogo-lista-elemento-1, #catalogo-lista-elemento-2, #catalogo-lista-elemento-3, #catalogo-lista-elemento-4 {
+    width: 400px;
+}
+
+.catalogo-lista-elemento {
+    margin: 50px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.catalogo-elemento-descripcion {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.catalogo-link-button {
+    background-color: #83c5be;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 992px ) {
+
+    #nav-list-element {
+        display: -webkit-inline-box;
+        position: relative;
+        right: 20px;
+        margin-top: 40px;
+    }
 
 }
 
-@media screen and (max-width: 500px) {
-    #grilla {
-        display: grid;
-        grid-template-areas: 
-            "header header"
-            "presentacion catalogo";
-        grid-template-rows: 150px 300px;
-        grid-template-columns: 70% 30%;
-    }
+@media screen and (max-width: 992px) {
     
-    .list-nav {
+    #logo-element {
+        /*grid-area: nav1;*/
+        align-self: center;
+    }
+
+    .header-img {
+        background-image: linear-gradient(to left, #ca2e06, #ffb4a2);
+        width: 100%;
+        height: 200px;
+    }
+
+    #nav-element {
+        display: inline;
+        margin: 30px;
+        font-size: 16px;
+    }
+
+    #nav-list-element {
+        /*grid-area: nav2;*/
+        position: relative;
+        align-self: center;
+        margin: 20px;
         text-align: center;
-        background-color: #014f86;
     }
 
-    .list-item {
-        border: 1px solid #fff;
-        height: 30px;
-        padding-top: 10px;
+    .presentacion-seccion {
+        /*grid-area: presentacion;*/
+        margin-top: 120px;
     }
 
-    .list-item a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    .header {
-        grid-area: header;
-    }
-    
-    .seccion-presentacion {
-        grid-area: presentacion;
-    }
-    
-    .seccion-catalogo {
+    .catalogo-seccion {
         grid-area: catalogo;
     }
+
+    .contacto-seccion {
+        grid-area: contacto;
+    }
+
+    .essen-contacto-item {
+        margin: 50px 20px 0 20px;
+    }
+
+    .footer-seccion {
+        grid-area: footer;
+    }    
 }

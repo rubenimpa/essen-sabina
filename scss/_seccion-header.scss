@@ -1,0 +1,35 @@
+/* Seccion header con el menú de navegación */
+.header-img {
+    background-image: linear-gradient(to left, #ca2e06, #ffb4a2);
+    width: 100%;
+    height: 100px;
+}
+
+.logo-element {
+    display: inline-block;
+    background-image: url('../images/essen-sabina.png');
+    width: 330px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px 0 0 20px;
+}
+
+#nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-element {
+    display: inline;
+    margin: 40px;
+    font-family: $font-texto;
+    font-size: 20px;
+}
+
+#nav-list-element {
+    display: -webkit-inline-box;
+    position: relative;
+    right: 20px;
+    margin-top: 40px;
+}

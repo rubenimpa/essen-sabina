@@ -1,0 +1,73 @@
+/* Seccion catálogo del index */
+.catalogo-seccion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.catalogo-opciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.catalogo-item {
+    position: relative;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+}
+
+#catalogo-img-1 {
+    background-image: url('../images/essen-ollas-y-sartenes.png');
+    transition: box-shadow 0.5s;
+    width: 400px;
+        &:hover {
+            box-shadow: 5px 10px 8px #888888;
+        }
+}
+
+#catalogo-img-2 {
+    background-image: url('../images/essen-combos.png');
+    transition: box-shadow 0.5s;
+    width: 400px;
+        &:hover {
+            box-shadow: 5px 10px 8px #888888;
+        }
+}
+
+#catalogo-img-3 {
+    background-image: url('../images/essen-complementos.png');
+    transition: box-shadow 0.5s;
+    width: 400px;
+        &:hover {
+            box-shadow: 5px 10px 8px #888888;
+        }
+}
+
+.catalogo-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.catalogo-texto {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: $font-texto;
+}
+
+/* Seccion contacto del index */
+.contacto-seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: $font-texto;
+}
