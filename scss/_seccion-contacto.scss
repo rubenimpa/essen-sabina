@@ -20,7 +20,7 @@
     line-height: 30px;
     font-size: 20px;
     margin: 50px 20px 0 100px;
-    font-family: $font-texto;
+    font-family: map-get($estilos-font, font-texto);
     color: #fff;
 }
 

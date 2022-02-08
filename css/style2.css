@@ -1,322 +1,255 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* @font-face {
-    font-family: ;
-    src: url();
-} */
-
-:root {
-    --font-titulo:'Playfair Display', serif;
-    --font-texto: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#header, #presentacion-seccion {
-    --bs-gutter-x: 0;
-}
-
+@charset "UTF-8";
 /* Seccion header con el menú de navegación */
 .header-img {
-    background-image: linear-gradient(to left, #ca2e06, #ffb4a2);
-    /*background-color: #ffb4a2;*/
-    width: 100%;
-    height: 100px;
-}
+  background-image: linear-gradient(to left, #ca2e06, #ffb4a2);
+  width: 100%;
+  height: 100px; }
 
 .logo-element {
-    display: inline-block;
-    background-image: url('../images/essen-sabina.png');
-    width: 330px;
-    height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 20px 0 0 20px;
-}
+  display: inline-block;
+  background-image: url("../images/essen-sabina.png");
+  width: 330px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px 0 0 20px; }
 
 #nav-link {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
 }
 
 #nav-element {
-    display: inline;
-    margin: 40px;
-    font-family: var(--font-texto);
-    font-size: 20px;
-}
+  display: inline;
+  margin: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px; }
 
 #nav-list-element {
-    display: -webkit-inline-box;
-    position: relative;
-    right: 20px;
-    margin-top: 40px;
-}
+  display: -webkit-inline-box;
+  position: relative;
+  right: 20px;
+  margin-top: 40px; }
 
 /* Seccion Presentación del index */
 .presentacion-seccion {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px; }
 
 .essen-presentacion {
-    position: relative;
-    background-image: url('../images/essen-presentacion-2.png');
-    width: 100%;
-    height: 650px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+  position: relative;
+  background-image: url("../images/essen-presentacion-2.png");
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .presentacion-texto {
-    position: absolute;
-    bottom: 220px;
-    right: 10px;
-    /*display: flex;
+  position: absolute;
+  bottom: 220px;
+  right: 10px;
+  /*display: flex;
     flex-direction: column;
     justify-content: center;*/
-    line-height: 40px;
-    margin: 10px 10px 0 10px;
-    font-family: var(--font-texto);
-    color: #fff;
-    font-size: 20px;
-}
-
-.seccion-titulo {
-    text-align: center;
-    font-family: var(--font-titulo);
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
+  line-height: 40px;
+  margin: 10px 10px 0 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fff;
+  font-size: 20px; }
 
 /* Seccion catálogo del index */
 .catalogo-seccion {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-}
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px; }
 
 .catalogo-opciones {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .catalogo-item {
-    position: relative;
-    display: flex;
-    margin: 10px;
-    justify-content: center;
-    flex-direction: column;
-    width: 400px;
-    height: 400px;
-}
+  position: relative;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 400px; }
 
 #catalogo-img-1 {
-    background-image: url('../images/essen-ollas-y-sartenes.png');
-    transition: box-shadow 0.5s;
-    width: 400px;
-}
+  background-image: url("../images/essen-ollas-y-sartenes.png");
+  transition: box-shadow 0.5s;
+  width: 400px; }
+  #catalogo-img-1:hover {
+    box-shadow: 5px 10px 8px #888888; }
 
 #catalogo-img-2 {
-    background-image: url('../images/essen-combos.png');
-    transition: box-shadow 0.5s;
-    width: 400px;
-}
+  background-image: url("../images/essen-combos.png");
+  transition: box-shadow 0.5s;
+  width: 400px; }
+  #catalogo-img-2:hover {
+    box-shadow: 5px 10px 8px #888888; }
 
 #catalogo-img-3 {
-    background-image: url('../images/essen-complementos.png');
-    transition: box-shadow 0.5s;
-    width: 400px;
-}
-
-.catalogo-img-1:hover, .catalogo-img-2:hover, .catalogo-img-3:hover {
-    box-shadow: 5px 10px 8px #888888;
-}
+  background-image: url("../images/essen-complementos.png");
+  transition: box-shadow 0.5s;
+  width: 400px; }
+  #catalogo-img-3:hover {
+    box-shadow: 5px 10px 8px #888888; }
 
 .catalogo-link {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    text-decoration: none;
-}
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  text-decoration: none; }
 
 .catalogo-texto {
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    font-family: var(--font-texto);
-}
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
 
 /* Seccion contacto del index */
 .contacto-seccion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 100px;
-    font-family: var(--font-texto);
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
 
 .essen-contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 .essen-contacto-img {
-    background-image: url('../images/essen-contacto.png');
-    width: 90%;
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 20px 20px 0 40px;
-}
+  background-image: url("../images/essen-contacto.png");
+  width: 90%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px 20px 0 40px; }
 
 .essen-contacto-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 30px;
-    font-size: 20px;
-    margin: 50px 20px 0 100px;
-    font-family: var(--font-texto);
-    color: #fff;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 30px;
+  font-size: 20px;
+  margin: 50px 20px 0 100px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fff; }
 
 .essen-contacto-item-row {
-    display: flex;
-    flex-direction: row;
-}
+  display: flex;
+  flex-direction: row; }
 
 .essen-contacto-item p {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 30px;
-}
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 30px; }
 
 /* Seccion footer */
 .footer-seccion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #ffb4a2;
-    width: 100%;
-    height: 200px;
-    margin-top: 40px;
-    text-align: center;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffb4a2;
+  width: 100%;
+  height: 200px;
+  margin-top: 40px;
+  text-align: center; }
 
 .footer-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 .footer-icon {
-    margin: 5px;
-}
+  margin: 5px; }
 
 .footer-img {
-    width: 40px;
-    height: 40px;
-}
+  width: 40px;
+  height: 40px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#header, #presentacion-seccion {
+  --bs-gutter-x: 0; }
+
+.seccion-titulo {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 50px;
+  margin-top: 50px; }
 
 /* Seccion catalogo lista */
 .catalogo-lista {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
 
 #catalogo-lista-elemento-1, #catalogo-lista-elemento-2, #catalogo-lista-elemento-3, #catalogo-lista-elemento-4 {
-    width: 400px;
-}
+  width: 400px; }
 
 .catalogo-lista-elemento {
-    margin: 50px 50px 50px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+  margin: 50px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .catalogo-elemento-descripcion {
-    text-align: center;
-    margin-bottom: 20px;
-}
+  text-align: center;
+  margin-bottom: 20px; }
 
 .catalogo-link-button {
-    background-color: #83c5be;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    text-align: center;
-}
+  background-color: #83c5be;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center; }
 
-@media screen and (min-width: 992px ) {
-
-    #nav-list-element {
-        display: -webkit-inline-box;
-        position: relative;
-        right: 20px;
-        margin-top: 40px;
-    }
-
-}
+@media screen and (min-width: 992px) {
+  #nav-list-element {
+    display: -webkit-inline-box;
+    position: relative;
+    right: 20px;
+    margin-top: 40px; } }
 
 @media screen and (max-width: 992px) {
-    
-    #logo-element {
-        /*grid-area: nav1;*/
-        align-self: center;
-    }
-
-    .header-img {
-        background-image: linear-gradient(to left, #ca2e06, #ffb4a2);
-        width: 100%;
-        height: 200px;
-    }
-
-    #nav-element {
-        display: inline;
-        margin: 30px;
-        font-size: 16px;
-    }
-
-    #nav-list-element {
-        /*grid-area: nav2;*/
-        position: relative;
-        align-self: center;
-        margin: 20px;
-        text-align: center;
-    }
-
-    .presentacion-seccion {
-        /*grid-area: presentacion;*/
-        margin-top: 120px;
-    }
-
-    .catalogo-seccion {
-        grid-area: catalogo;
-    }
-
-    .contacto-seccion {
-        grid-area: contacto;
-    }
-
-    .essen-contacto-item {
-        margin: 50px 20px 0 20px;
-    }
-
-    .footer-seccion {
-        grid-area: footer;
-    }    
-}
+  #logo-element {
+    /*grid-area: nav1;*/
+    align-self: center; }
+  .header-img {
+    background-image: linear-gradient(to left, #ca2e06, #ffb4a2);
+    width: 100%;
+    height: 200px; }
+  #nav-element {
+    display: inline;
+    margin: 30px;
+    font-size: 16px; }
+  #nav-list-element {
+    /*grid-area: nav2;*/
+    position: relative;
+    align-self: center;
+    margin: 20px;
+    text-align: center; }
+  .presentacion-seccion {
+    /*grid-area: presentacion;*/
+    margin-top: 120px; }
+  .catalogo-seccion {
+    grid-area: catalogo; }
+  .contacto-seccion {
+    grid-area: contacto; }
+  .essen-contacto-item {
+    margin: 50px 20px 0 20px; }
+  .footer-seccion {
+    grid-area: footer; } }

@@ -1,5 +1,8 @@
-$font-titulo:'Playfair Display', serif;
-$font-texto: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/* Mapa con los estilos de fonts utilizados*/
+$estilos-font: (
+    font-titulo: ('Playfair Display', 'serif'),
+    font-texto: ('Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif')
+);
 
 @import "seccion-header";
 @import "seccion-presentacion";
@@ -19,7 +22,7 @@ $font-texto: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 .seccion-titulo {
     text-align: center;
-    font-family: $font-titulo;
+    font-family: map-get($estilos-font, font-titulo);
     margin-bottom: 50px;
     margin-top: 50px;
 }

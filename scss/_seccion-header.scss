@@ -23,7 +23,7 @@
 #nav-element {
     display: inline;
     margin: 40px;
-    font-family: $font-texto;
+    font-family: map-get($estilos-font, font-texto);
     font-size: 20px;
 }
 

@@ -25,7 +25,7 @@
     justify-content: center;*/
     line-height: 40px;
     margin: 10px 10px 0 10px;
-    font-family: $font-texto;
+    font-family: map-get($estilos-font, font-texto);
     color: #fff;
     font-size: 20px;
 }
