@@ -60,12 +60,3 @@
     color: #fff;
     font-family: map-get($estilos-font, font-texto);
 }
-
-/* Seccion contacto del index */
-.contacto-seccion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 100px;
-    font-family: map-get($estilos-font, font-texto);
-}

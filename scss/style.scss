@@ -7,8 +7,9 @@ $estilos-font: (
 @import "seccion-header";
 @import "seccion-presentacion";
 @import "seccion-catalogo";
-@import "seccion-contacto";
 @import "seccion-footer";
+@import "seccion-destacado";
+@import "seccion-informacion";
 
 * {
     margin: 0;
@@ -77,12 +78,11 @@ $estilos-font: (
         align-self: center;
     }
 
-    .header-img {
+    #header {
         background-image: linear-gradient(to left, #ca2e06, #ffb4a2);
         width: 100%;
-        height: 200px;
     }
-
+    
     #nav-element {
         display: inline;
         margin: 30px;
@@ -105,16 +105,45 @@ $estilos-font: (
     .catalogo-seccion {
         grid-area: catalogo;
     }
-
-    .contacto-seccion {
-        grid-area: contacto;
-    }
-
-    .essen-contacto-item {
-        margin: 50px 20px 0 20px;
+ 
+    .informacion-item {
+        margin: 0 0 0 50px;
+        border-right: none;
+        align-items: center;
+      }
+    
+    .informacion-item-end {
+        margin: 0 70px 0 50px;
     }
 
     .footer-seccion {
-        grid-area: footer;
-    }    
+        display: flex;
+        justify-content: start;
+        background-color: #ffb4a2;
+        width: 100%;
+        height: 250px;
+        margin-top: 150px; }
+    
+    .footer-item-colum {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-bottom: 40px;
+    }
+    
+    .contacto-titulo {
+        font-family: map-get($estilos-font, font-texto);
+        color: #ffffff;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+      
+    .contacto-dato {
+        font-family: map-get($estilos-font, font-texto);
+        color: #ffffff;
+        font-size: 14px;
+    }
+    
+
 }

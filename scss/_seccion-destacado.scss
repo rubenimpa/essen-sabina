@@ -1,0 +1,27 @@
+@mixin background ($img) {
+    background-image: url($img);
+    width: 400px;
+}
+
+
+#destacado-img-1 {
+    @include background('../images/destacado-img-1.png');
+}
+  
+#destacado-img-2 {
+    @include background('../images/destacado-img-2.png');
+}
+
+#destacado-img-3 {
+    @include background('../images/destacado-img-3.png');
+}
+
+.destacado-item {
+    position: relative;
+    display: flex;
+    margin: 10px;
+    justify-content: end;
+    flex-direction: column;
+    width: 400px;
+    height: 400px; 
+}

@@ -1,31 +1,28 @@
 /* Seccion Presentación del index */
-.presentacion-seccion {
+#presentacion-seccion {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.essen-presentacion {
+    margin-top: 20px; }
+  
+  #essen-presentacion {
     position: relative;
-    background-image: url('../images/essen-presentacion-2.png');
-    width: 100%;
+    background-image: url("../images/essen-presentacion-2.png");
+    width: 95%;
     height: 650px;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.presentacion-texto {
+    background-repeat: no-repeat; }
+  
+  .presentacion-texto {
     position: absolute;
     bottom: 220px;
     right: 10px;
     /*display: flex;
-    flex-direction: column;
-    justify-content: center;*/
+      flex-direction: column;
+      justify-content: center;*/
     line-height: 40px;
     margin: 10px 10px 0 10px;
-    font-family: map-get($estilos-font, font-texto);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
     color: #fff;
-    font-size: 20px;
-}
+    font-size: 20px; }
